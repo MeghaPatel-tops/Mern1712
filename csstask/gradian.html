@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradient </title>
+    <style>
+        .main{
+            height: 200px;
+            width: 200px;
+            margin: 50px;
+            border:1px solid black;
+        }
+        .first{
+            background-image: linear-gradient(to left, green 25%, blue 50%, red 90%);
+        }
+        .sec{
+            background: radial-gradient(circle at top right, green 20%, blue 50%, red 91%);
+        }
+        .third{
+            background: conic-gradient(green 40deg, blue 97deg, red 267deg, green 358deg);
+        }
+        .forth{
+            background: repeating-linear-gradient(black 10px, white 20px, black 30px);
+        }
+        .fifth{
+            background: repeating-radial-gradient(black 10px, white 20px, black 30px);
+        }
+    </style>
+</head>
+<body>
+<div class="main first"></div>
+<div class="main sec"></div>
+<div class="main third"></div>
+<div class="main forth"></div>
+<div class="main fifth"></div>
+</body>
+</html>

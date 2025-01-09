@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img1{
+            margin: 100px;
+            height: 300px;
+            width: 300px;
+            border-radius: 25%;
+            /* clip-path: circle(37% at 54% 32%); */
+            /* clip-path: ellipse(30% 45% at 50% 50%); */
+            /* clip-path: polygon(100% 0%, 50% 0%, 100% 100%); */
+        }
+        .masked-image {
+           
+            width: 300px; /* Set the width of the image */
+            height: 300px; /* Set the height of the image */
+            background-image: url('https://i.sstatic.net/jGlzr.png'); /* Your image */
+            -webkit-mask-image: url('https://codrops-1f606.kxcdn.com/codrops/wp-content/uploads/2014/10/mask-image.png?x41474'); /* Mask image for WebKit browsers */
+            mask-image: url('https://codrops-1f606.kxcdn.com/codrops/wp-content/uploads/2014/10/mask-image.png?x41474'); /* Mask image */
+            -webkit-mask-size: cover; /* Cover the entire element */
+            mask-size: 100% 100%; /* Cover the entire element */
+            -webkit-mask-repeat: no-repeat; /* No repeat */
+            mask-repeat: no-repeat; /* No repeat */
+        }
+        img{
+            width: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- <img class="img1" src="../htmltask/images/pexels-photo-85773.jpeg" alt=""> -->
+    <div class="masked-image">
+       
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Example</title>
+    <style>
+        img{
+            height: 200px;
+            width: 200px;
+            /* filter: blur(3px); */
+            /* filter: brightness(50%); */
+            /* filter: contrast(50%); */
+            /* filter: drop-shadow(0 0 5px red); */
+            /* filter: grayscale(80%); */
+            /* filter: hue-rotate(90deg); */
+            /* filter: invert(10%); */
+            filter: sepia(0%)
+        }
+        .main{
+            margin-top: 20px;
+            height: 200px;
+            width: 80%;
+            border :10px solid black;
+            border-style: dashed;
+            background-color: aquamarine;
+            padding: 20px;
+            background-image: url("../htmltask//images/pexels-photo-85773.jpeg");
+            background-size: 50px 50px;
+            background-repeat: no-repeat;
+        }
+        .first{
+            background-clip: border-box;
+            background-origin: border-box;
+        }
+        .sec{
+            background-clip: content-box;
+            background-origin: content-box;
+        }
+        .third{
+            background-clip: padding-box;
+            background-origin:padding-box;
+        }
+        .forth{
+            margin-top: 30px;
+            height: 300px;
+            width: 300px;
+            background-image: url('../htmltask//images/images.jpeg'),url('../htmltask/images/51e0d5aa27808ce689e3dd5a5cd7685a.png');
+            background-repeat: repeat,no-repeat;
+            background-size: 100% 100%,200px 200px;
+            background-blend-mode: darken;
+        }
+    </style>
+</head>
+<body>
+    <img src="../htmltask/images/51e0d5aa27808ce689e3dd5a5cd7685a.png" alt="">
+    <div class="main first">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi similique, eaque voluptates debitis repellendus nihil nobis amet impedit eligendi reprehenderit enim, praesentium quibusdam. Architecto cupiditate culpa delectus ipsa eveniet quam?</p>
+    </div>
+    <div class="main sec">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi similique, eaque voluptates debitis repellendus nihil nobis amet impedit eligendi reprehenderit enim, praesentium quibusdam. Architecto cupiditate culpa delectus ipsa eveniet quam?</p>
+    </div>
+    <div class="main third">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi similique, eaque voluptates debitis repellendus nihil nobis amet impedit eligendi reprehenderit enim, praesentium quibusdam. Architecto cupiditate culpa delectus ipsa eveniet quam?</p>
+    </div>
+    <div class="forth"></div>
+</body>
+</html>
