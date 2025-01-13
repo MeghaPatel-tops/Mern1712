@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 100px;
+        }
+        
+        .first::first-line{
+            color: red;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .first::first-letter{
+            color:yellow;
+            font-size: 4em;
+        }
+        h1::before{
+            content: "⭑✮💻₊ ⊹";
+        }
+        h1::after{
+            content: "⭑✮💻₊ ⊹";
+        }
+        h2{
+            text-decoration: underline;
+        }
+        .sec::marker{
+            color: blue;
+        }
+        ol li::marker{
+            color: blue;;
+        }
+        .first::selection{
+            background-color: black;
+            color: white;
+        }
+        ul li::marker{
+            content: "🎄";
+        }
+        .box{
+            margin-top: 50px;
+            height: 200px;
+            width: 200px;
+            border:1px solid black;
+            padding: 20px;
+        }
+        input::placeholder{
+            color: brown;
+        }
+        input[type="file"]::-webkit-file-upload-button{
+            background-color: blue;
+            color: white;
+        }
+        h2::before{
+            content: "★";
+        }
+    </style>
+</head>
+<body>
+<h2>Pseudo After and Before </h2>
+    <h1>Welcome to app</h1>
+<h2>Pseudo first line  and first latter  Pseudo::selection </h2>
+    <p class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Sequi totam optio aliquid eveniet, quidem voluptatum rem repellat quo eos quam fugiat laboriosam nesciunt culpa dignissimos consequatur ut maiores quisquam eaque!
+    </p>
+    <h2>
+        Pseudo marker Li::marker
+    </h2>
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+    <ol>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ol>
+    <h2>
+        Pseudo input::placeholder -webkit-file-upload-button
+    </h2>
+    <div class="box">
+        <input type="text" name="" id="" placeholder="Enter the text">
+        <br>
+        <br>
+        <input type="file" name="" id="">
+    </div>
+</body>
+</html>
